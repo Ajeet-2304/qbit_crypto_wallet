@@ -1,0 +1,244 @@
+@media only screen and (max-width: 600px) {
+    .wallet{
+        height: 82.5vh;
+        width: 100%;
+        color: black;
+        background: #fff;
+    }
+
+    .userBalance{
+        width: 100%;
+        height: 15vh;
+        /* background: lightgreen; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        /* line-height: 10vh; */
+    }
+    
+    .leftContainer{
+        height: 100%;
+        background: #fff;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .amountHeading{
+        /* width: 100%; */
+        /* height: 100%; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        font-family: tahoma;
+        font-size: 12px;
+        font-weight: 300;
+        color: #2a2a2a;
+    }
+    
+    .balVisibility{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .totalValue{
+        font-size: 24px;
+        font-weight: 700;
+        font-family: tahoma;
+        color: rgb(70, 153, 70);
+    }
+
+    .rightContainer{
+        width: 40%;
+        height: 100%;
+        /* background: lightpink; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .currentCurrency select{
+        border: none;
+        background-color: transparent;
+        color: #2a2a2a;
+    }
+
+    .currentChange span{
+        color: rgb(83, 192, 83);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    /* Deposit & Withdraw */
+    .transactionContainer{
+        width: 100%;
+        height: 10vh;
+        /* background: cadetblue; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .transactionContainer .reverse{
+        width: 14vw;
+        margin: 0 -1vw;
+        height: 7vh;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .transactionContainer .reverse span{
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    /* .transactionContainer:hover{
+        transform: rotateY('360deg');
+        position: absolute;
+    } */
+
+    .transactionContainer .depositBtn, .withdrawBtn{
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Assets */
+    .assets{
+        margin: 0 -5vw;
+        background: #000;
+    }
+    .assetsContainer{
+        width: 100vw;
+        height: 57.5vh;
+        /* margin: 0 ; */
+        /* margin-bottom: -20vh; */
+        background: #fff;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .assetsHeading{
+        margin: 0 5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .assetsHeading .searchIcon{
+        width: 5vw;
+        height: 3vh;
+        border: 2px solid #9a9a9a;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .assetsHeading .searchIcon .sIcon{
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .assetsItem{
+        width: 100%;
+        height: 50vh;
+        /* background: lightcoral; */
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vh;
+    }
+
+    .assetsItem .btc{
+        width: 90vw;
+        margin: 0 5vw;
+        height: 10vh;
+        /* background: lightseagreen; */
+        background: #fff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .assetsItem .eth .ethIcon{
+        color: rgb(68, 73, 84);
+        font-size: 48px;
+        /* color: 3D3E3F; */
+        /* color: ; */
+    }
+
+    .assetsItem .bnb .bnbIcon{
+        font-size: 40px;
+    }
+
+    .assetsItem .xrp .xrpIcon{
+        font-size: 36px;
+        color: #000;
+    }
+
+    .assetsItem .btc .leftDiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2vw;
+        margin-left: 3vw;
+    }
+
+
+    .assetsItem .btc .icon{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 60px;
+        color: orange;
+    }
+
+    .assetsItem .btc .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: tahoma;
+        font-weight: 500;
+    }
+
+    .assetsItem .btc .title .quantity {
+        font-size: 12px;
+        color: #2a2a2a;
+    }
+
+    .assetsItem .btc .rightDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 5vw;
+        color: #2a2a2a;
+        font-weight: 500;
+    }
+
+
+}
+

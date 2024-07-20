@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        /* margin: 5vw; */
+        height: 10vh;
+        color: black;
+        background-color: #fff;
+        line-height: 5vh;
+    }
+    
+}
+
+
