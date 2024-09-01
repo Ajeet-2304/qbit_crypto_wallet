@@ -11,7 +11,13 @@ Currently, two official plugins are available:
 ScreenShots of the Project:
 
 1. Home Page
+
+
    ![Home-page](https://github.com/user-attachments/assets/7ba6837e-e0dc-44b7-a8ea-208dbeaae51f)
 
-2. Withdraw Page
+
+
+3. Withdraw Page
+
+
    ![Withdraw-page](https://github.com/user-attachments/assets/ff00066c-c74e-4212-ba02-df3ea6cdbfc4)
