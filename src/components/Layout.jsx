@@ -1,21 +1,21 @@
 // import React from 'react'
 import { Outlet } from "react-router-dom"
-// import Navbar from "./Navbar";
-// import Footer from "./Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import '../css/Layout.css';
 const Layout = () => {
   return (
     <>
         <div className="layout">
-            {/* <div className="navbar">
+            <div className="navbar">
                 <Navbar/>
-            </div> */}
+            </div>
             <div className="outlet">
                 <Outlet/>
             </div>
-            {/* <div className="footer">
+            <div className="footer">
                 <Footer/>
-            </div> */}
+            </div>
 
         </div>
     </>

@@ -10,7 +10,7 @@ const Navbar = () => {
                     <BiCategory />
                 </div>
                 <div className="navHeading">
-                    <span>My Wallet</span>
+                    <span>Qbit Wallet</span>
                 </div>
                 <div className="userIcon">
                     <FaUser/>

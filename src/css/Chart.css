@@ -1,0 +1,81 @@
+.chart{
+    height: 82.5vh;
+    width: 100vw;
+    color: #fff;
+    background: #000;
+}
+
+.chart-heading{
+    /* width: 100vw; */
+    height: 7.5vh;
+    /* padding-left: 5vw; */
+    /* background: crimson; */
+}
+
+.chart-heading span{
+    padding-left: 5vw;
+    line-height: 7.5vh;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chart .table{
+    width: 90vw;
+    margin: 0 5vw;
+    
+}
+
+.chart .table tr{
+    display: flex;
+    flex-direction: row;
+    gap: 10vh 5vw;
+    margin-bottom: 1vh;
+}
+
+.chart .table  table  th:nth-child(2){
+    width: 30vw;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    /* margin-bottom: 1vh; */
+}
+
+.chart .table table td:nth-child(2){
+    width: 30vw;
+    /* margin-bottom: 1vh; */
+    /* background: cyan; */
+}
+
+.chart .table  table  th:nth-child(3){
+    width: 15vw;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+
+.chart .table table td:nth-child(3){
+    width: 20vw;
+    text-align: right;
+    /* background: cyan; */
+}
+
+.chart .table  table  th:nth-child(4){
+    width: 20vw;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 2vw;
+}
+
+.chart .table table td:nth-child(4){
+    width: 18vw;
+    /* margin-left: 2vw; */
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    background: crimson;
+    color: #fff;
+    /* background: cyan; */
+}

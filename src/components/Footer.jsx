@@ -6,24 +6,25 @@ import { MdCandlestickChart } from "react-icons/md";
 import { LuUser2 } from "react-icons/lu";
 
 import '../css/Footer.css';
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
     <>
         <footer>
             <div className="icon">
-                <FaWallet/>
+                <Link style={{color:'#fff'}} to={'/'}><FaWallet/></Link>
             </div>
             <div className="icon">
-                <FaEnvelopeCircleCheck/>
+                <Link style={{color:'#fff'}} to={'/notification'}><FaEnvelopeCircleCheck/></Link>
             </div>
             <div className="icon">
-                <PiArrowsDownUpBold/>
+                <Link to={'/withdraw'} style={{color:'#fff'}}><PiArrowsDownUpBold/></Link>
             </div>
             <div className="icon">
-                <MdCandlestickChart/>
+                <Link style={{color:'#fff'}} to={'/chart'}><MdCandlestickChart/></Link>
             </div>
             <div className="icon">
-                <LuUser2/>
+                <Link style={{color:'#fff'}} to={'/profile'}><LuUser2/></Link>
             </div>
         </footer>
     </>

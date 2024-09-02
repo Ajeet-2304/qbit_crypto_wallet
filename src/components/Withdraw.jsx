@@ -10,7 +10,7 @@ const Withdraw = () => {
     return (
         <>
             <div className="withdraw">
-                <nav >
+                {/* <nav >
                     <div className="menuIcon">
                         <a href="/"><IoIosArrowBack/></a>
                         
@@ -21,7 +21,7 @@ const Withdraw = () => {
                     <div className="userIcon">
                         <FaUser/>
                     </div>
-                </nav>
+                </nav> */}
                 <div className="selectAssets">
                     <div className="topDiv">
                         <div className="heading">
@@ -108,7 +108,7 @@ const Withdraw = () => {
                     </div>
                     <div className="bottomDiv">
                         <span>BTC 3.845</span>
-                        <span>-84,150 USD</span>
+                        <span>224,568.22 USD</span>
                     </div>
                 </div>
                 {/* Transaction Fees */}

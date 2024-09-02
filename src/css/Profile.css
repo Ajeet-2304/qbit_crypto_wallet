@@ -1,0 +1,107 @@
+.profile{
+    height: 82.5vh;
+    background: #000;
+    color: #fff;
+    width: 100vw;
+}
+
+.profile-heading{
+    height: 7.5vh;
+    /* background: crimson; */
+}
+
+.profile-heading span{
+    padding-left: 5vw;
+    line-height: 7.5vh;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile .userCard{
+    width: 90vw;
+    height: 18vh;
+    margin: 0vh 5vw;
+    margin-top: 2vh;
+    border: 2px solid #676666;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile .userCard .userName{
+    width: 84vw;
+    height: 5vh;
+    margin: 0vh 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background: crimson; */
+}
+
+.profile .userCard .userId{
+    width: 84vw;
+    height: 5vh;
+    margin: 0vh 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background: crimson; */
+}
+
+.profile .userCard .userInfo{
+    width: 84vw;
+    height: 5vh;
+    margin: 0vh 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background: crimson; */
+}
+
+.profile .accountData{
+    width: 90vw;
+    height: 30vh;
+    margin: 2vh 5vw;
+    /* background: crimson; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile .accountData .innerCard{
+    height: 5vh;
+    line-height: 5vh;
+    /* background: crimson; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    text-align: center;
+}
+
+.profile .accountData .innerCard span{
+    /* color: #000; */
+    font-size: medium;
+}
+
+.profile .buttons{
+    width: 90vw;
+    margin: 15vh 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile .buttons button{
+    width: 43vw;
+    background: #fff;
+    color: #000;
+}

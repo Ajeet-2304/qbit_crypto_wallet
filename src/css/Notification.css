@@ -1,0 +1,65 @@
+.notification{
+    width: 100vw;
+    height: 82.5vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+
+}
+
+.notification .notify-heading{
+    height: 10vh;
+    /* background: crimson; */
+    line-height: 10vh;
+    /* font-size: 16px; */
+}
+
+.notification .notify-heading > span{
+    font-size: 24px;
+    padding-left: 5vw;
+}
+
+.notification-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.notification-card{
+    width: 90vw;
+    margin: 0 5%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 2vw;
+    background: #999999;
+    border-radius: 15px;
+}
+
+.notification-card .notify-leftDiv{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background: yellow; */
+}
+
+.notification-card .notify-leftDiv > .notify-icon{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-card .notify-leftDiv .timeStamp{
+    font-size: small;
+}

@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react';
+import axios from 'axios';
 import { IoEyeOutline } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { LuArrowUpToLine } from "react-icons/lu";
@@ -19,7 +20,28 @@ import {Link} from 'react-router-dom';
 const Wallet = () => {
     const [hideBalance, setHideBalance] = useState(false);
     const [valueHide, setValueHide] = useState("6000");
-    // const [flip, setFlip] = useState(false);
+    const options = {
+        method: 'GET',
+        url: 'https://coingecko.p.rapidapi.com/exchanges/%7Bid%7D',
+        headers: {
+            // 'x-rapidapi-key': import.meta.env.VITE_REACT_APP_QBIT_CRYPTO_WALLET_API_KEY,
+            'x-rapidapi-key': 'bd40b87fc4msh2f5decad4481e03p1de175jsnfd122a6134fb',
+            'x-rapidapi-host': 'coingecko.p.rapidapi.com'
+        }
+    };
+    // const BASE_URL = 'https://coingecko.p.rapidapi.com';
+    useEffect(() => {
+        const fetchData = async() =>{
+            try {
+                const response = await axios.request(options);
+                console.log(response.data);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        fetchData();
+        
+    },[])
   return (
     <>
         <div className="wallet">
@@ -55,15 +77,15 @@ const Wallet = () => {
             </div>
             {/* Deposit & Withdraw */}
             <div className="transactionContainer" >
-                <button className='depositBtn'><LuArrowDownToLine/> Deposit</button>
-                <button className='reverse' >
-                    <span><BsArrowRepeat/></span>
-                </button>
-                <Link to={'/withdraw'}>
-                    <button className='withdrawBtn'> <LuArrowUpToLine/> Withdraw</button>
-                </Link>
-                
-                
+                <div className="depositBtn">
+                    <button><LuArrowDownToLine/> Deposit</button>
+                </div>
+                <div className="reverseBtn">
+                    <button><BsArrowRepeat/></button>
+                </div>
+                <div className="withdraw">
+                    <Link to={'/withdraw'}><button><LuArrowUpToLine/><span>withdraw</span></button></Link>
+                </div>
             </div>
 
             {/* Assets */}

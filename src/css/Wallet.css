@@ -1,14 +1,15 @@
 @media only screen and (max-width: 600px) {
     .wallet{
         height: 82.5vh;
-        width: 100%;
+        width: 100vw;
         color: black;
         background: #fff;
+        /* background: crimson; */
     }
 
     .userBalance{
-        width: 100%;
-        height: 15vh;
+        width: 100vw;
+        height: 10vh;
         /* background: lightgreen; */
         display: flex;
         flex-direction: row;
@@ -19,8 +20,9 @@
     
     .leftContainer{
         height: 100%;
-        background: #fff;
-        width: 60%;
+        background: #FFF;
+        width: 60vw;
+        padding-left: 5vw;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -61,6 +63,7 @@
         width: 40%;
         height: 100%;
         /* background: lightpink; */
+        padding-right: 5vw;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -81,20 +84,23 @@
 
     /* Deposit & Withdraw */
     .transactionContainer{
-        width: 100%;
-        height: 10vh;
+        width: 80vw;
+        margin: 0vh 10vw;
+        height: 15vh;
         /* background: cadetblue; */
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        position: relative;
+        /* gap:  0vh 2vw; */
+    
     }
     
     .transactionContainer .reverse{
         width: 14vw;
-        margin: 0 -1vw;
-        height: 7vh;
+        /* margin: 0 -1vw; */
+        height: 8vh;
+        line-height: 10vh;
         border-radius: 100px;
         display: flex;
         align-items: center;
@@ -102,27 +108,49 @@
         
     }
 
-    .transactionContainer .reverse span{
-        font-size: 20px;
-        font-weight: bold;
+
+    .transactionContainer .reverseBtn button{
+        border-radius: 30px;
         color: #fff;
     }
 
-    /* .transactionContainer:hover{
-        transform: rotateY('360deg');
-        position: absolute;
-    } */
+    .transactionContainer .depositBtn{
+        line-height: 10vh;
+    }
 
-    .transactionContainer .depositBtn, .withdrawBtn{
-        border-radius: 20px;
+    .transactionContainer .depositBtn button{
+        border-radius: 25px;
+        width: 30vw;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    .transactionContainer .withdraw{
+        
+        border-radius: 25px;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .transactionContainer .withdraw button{
+        width: 30vw;
+        height: 6.5vh;
+        border-radius: 25px;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+    }
+
+
     /* Assets */
     .assets{
-        margin: 0 -5vw;
+        /* margin: 0 -5vw; */
         background: #000;
     }
     .assetsContainer{
@@ -161,11 +189,13 @@
     .assetsItem{
         width: 100%;
         height: 50vh;
-        /* background: lightcoral; */
+        /* background: #efefef; */
         margin-top: 2vh;
         display: flex;
         flex-direction: column;
         gap: 2.5vh;
+        overflow-x: auto;
+        overflow-y: auto;
     }
 
     .assetsItem .btc{
@@ -173,13 +203,18 @@
         margin: 0 5vw;
         height: 10vh;
         /* background: lightseagreen; */
-        background: #fff;
+        /* background: #cbabab; */
         border-radius: 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        
     }
+
+    /* .btc{
+        border: 2px solid #efefef;
+    } */
 
     .assetsItem .eth .ethIcon{
         color: rgb(68, 73, 84);
